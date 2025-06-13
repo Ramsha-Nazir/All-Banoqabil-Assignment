@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0 box-border">
+  <div class="main flex flex-col md:flex-row justify-between items-center px-4 py-2.5 gap-4 md:gap-0">
+    <div class="part1 flex items-center gap-2">
+      <span class="bars flex items-center justify-center h-8 w-8 md:h-10 md:w-10 rounded-full text-gray-500 text-lg md:text-xl hover:bg-gray-200 cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+      <span class="sp ml-4 text-red-600 text-2xl md:text-[30px] ">
+        <i class="fa-brands fa-youtube"></i>
+      </span>
+      <h1 class=" text-xl md:text-2xl">
+        YouTube<sup class="sup text-xs md:text-sm font-light">PK</sup>
+      </h1>
+    </div>
+    <div class="part2 flex items-center gap-4 md:gap-5 w-full md:w-auto">
+      <div class="search-container relative w-full md:w-auto">
+        <input 
+          type="text" 
+          placeholder="search" 
+          class="w-full md:w-[250px] lg:w-[300px] h-[35px] px-4 md:px-5 rounded-full border-none text-base md:text-lg shadow-md transition-all"
+        />
+        <i class="fa-solid fa-magnifying-glass absolute top-1/2 right-4 md:right-5 -translate-y-1/2 text-lg md:text-xl text-gray-600 cursor-pointer"></i>
+      </div>
+      <span class="micro flex justify-center items-center h-8 w-8 md:h-10 md:w-10 rounded-full bg-gray-100 text-lg md:text-xl hover:bg-gray-200 cursor-pointer">
+        <i class="fa-solid fa-microphone"></i>
+      </span>
+    </div>
+    <div class="part3 flex items-center gap-4 md:gap-5">
+      <span class="create flex items-center justify-center h-[35px] w-[80px] md:w-[100px] bg-gray-100 rounded-full gap-2 text-lg md:text-xl hover:bg-gray-200 cursor-pointer">
+        <i class="fa-solid fa-plus"></i>Create
+      </span>
+      <span class="bell flex justify-center items-center h-8 w-8 md:h-10 md:w-10 rounded-full text-lg md:text-xl hover:bg-gray-200 cursor-pointer">
+        <i class="fa-solid fa-bell"></i>
+      </span>
+      <span class="user flex justify-center items-center h-8 w-8 md:h-10 md:w-10 rounded-full text-lg md:text-xl hover:bg-gray-200 cursor-pointer">
+        <i class="fa-solid fa-user"></i>
+      </span>
+    </div>
+  </div>
+
+  
+  <div class="layout flex flex-col md:flex-row">
+    <aside class="w-full md:w-[250px] min-h-[auto] md:min-h-screen border-r border-gray-200 p-4 md:p-5">
+      <ul class="list-none">
+        <li class="flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="fa-solid fa-house"></i>Home
+        </li>
+        <li class="flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="fas fa-play"></i>Shorts
+        </li>
+        <li class="flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="fas fa-bell"></i>Subscription
+        </li>
+      </ul>
+      <hr class="my-4 md:my-5" />
+      <h2 class="flex items-center gap-2.5 text-xl md:text-[23px] mt-4 md:mt-5 ml-1.5 py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+        You <i class="fa-solid fa-chevron-right"></i>
+      </h2>
+      <ul class="list-none">
+        <li class="you-li flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="fa-solid fa-clock-rotate-left"></i>History
+        </li>
+        <li class="you-li flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="fas fa-list"></i>Playlists
+        </li>
+        <li class="you-li flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="fas fa-video"></i>Your Videos
+        </li>
+        <li class="you-li flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="far fa-clock"></i>Watch Later
+        </li>
+        <li class="you-li flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="far fa-thumbs-up"></i>Liked Videos
+        </li>
+        <li class="you-li flex items-center gap-2.5 text-base md:text-lg py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          <i class="far fa-circle-down"></i>Downloads
+        </li>
+      </ul>
+      <hr class="my-4 md:my-5">
+      <h2 class="text-xl md:text-[23px] mt-4 md:mt-5 ml-1.5 py-2 px-2.5 rounded-lg hover:bg-gray-300 cursor-pointer">Subscriptions</h2>
+      <ul class="subs list-none">
+        <li class="flex items-center gap-2.5 text-sm md:text-base py-2 px-2 mt-1 ml-1.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          HUM TV
+        </li>
+        <li class="flex items-center gap-2.5 text-sm md:text-base py-2 px-2 mt-1 ml-1.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          Panaversity
+        </li>
+        <li class="flex items-center gap-2.5 text-sm md:text-base py-2 px-2 mt-1 ml-1.5 rounded-lg hover:bg-gray-300 cursor-pointer">
+          Techverse 51
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main-content flex-1 p-4 md:p-5">
+      <section class="top">
+        <ul class="list-none flex gap-2 md:gap-3.5 mb-4 md:mb-5 flex-wrap">
+          <li class="all text-sm md:text-base bg-black text-white rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium">
+            All
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            Pakistani dramas
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            Music
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            Python
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            Computer programming
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            Podcasts
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            News
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            Live
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            Dua
+          </li>
+          <li class="li text-sm md:text-base bg-gray-200 rounded-lg py-1.5 px-2 md:px-3 cursor-pointer font-medium hover:bg-gray-300">
+            New to you
+          </li>
+        </ul>
+      </section>
+
+      <div class="cards grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4 md:gap-5">
+        <div class="card1 bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all scale-100 hover:scale-105 duration-200">
+          <img src="https://i.ytimg.com/vi/M_DCVOU2mes/sddefault.jpg" class="w-full h-[180px] md:h-[200px] object-cover" />
+          <h1 class="text-sm md:text-base p-3 pb-1.5">
+            Is your heart filled with the world? Then empty it for the sake of Allah and see!
+          </h1>
+          <p class="px-3 pb-3.5 text-xs md:text-sm text-gray-700">Inspired By Islam</p>
+        </div>
+        <div class="card2 bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all scale-100 hover:scale-105 duration-200">
+          <img src="https://i.ytimg.com/vi/-rYdT_FXKMg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB132GuZ9a6GBamfvd7_jJzTZqoAA" class="w-full h-[180px] md:h-[200px] object-cover" />
+          <h1 class="text-sm md:text-base p-3 pb-1.5">
+            Electricity Price Reduced | BOL News Bulletin 9PM | Shutter Down Strike In Pakistan
+          </h1>
+          <p class="px-3 pb-3.5 text-xs md:text-sm text-gray-700">AJ News</p>
+        </div>
+        <div class="card3 bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all scale-100 hover:scale-105 duration-200">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_848OUoQr7toLhO0qmEuwBiMM57GCHsPbjGxRGj5QXpNwNBEgGW0jaAi2Vhw53pfneX9HsY9PtR1qd-potMUz1dCGzQ6sAyINCKIfPlEIVug3t3oRd8--74i8uigPieBWOfY87W40Ng6X48S6a_i-03Oe4lGRJKvoxKAdRu4llplhrknvWA1tkcwbkv6t/s16000-rw/Warp%20AI%20-%20AI%20at%20Your%20Command.webp" class="w-full h-[180px] md:h-[200px] object-cover" />
+          <h1 class="text-sm md:text-base p-3 pb-1.5">
+            AI on the command line Modern terminal built with Rust and AI
+          </h1>
+          <p class="px-3 pb-3.5 text-xs md:text-sm text-gray-700"><strong>Sponsored</strong>.warp</p>
+        </div>
+        <div class="card4 bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all scale-100 hover:scale-105 duration-200">
+          <img src="https://i.ytimg.com/vi/xJA8tP74KD0/maxresdefault.jpg" class="w-full h-[180px] md:h-[200px] object-cover" />
+          <h1 class="text-sm md:text-base p-3 pb-1.5">
+            API Authentication: JWT, OAuth2, and More
+          </h1>
+          <p class="px-3 pb-3.5 text-xs md:text-sm text-gray-700">ByteMonkey</p>
+        </div>
+        <div class="card5 bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all scale-100 hover:scale-105 duration-200">
+          <img src="https://sadesign.vn/pictures/picfullsizes/2024/09/22/iiw1727014950.jpg" class="w-full h-[180px] md:h-[200px] object-cover" />
+          <h1 class="text-sm md:text-base p-3 pb-1.5">
+            Adobe illustrator Training - class 1 - Selection Tool
+          </h1>
+          <p class="px-3 pb-3.5 text-xs md:text-sm text-gray-700">GFX Mentor</p>
+        </div>
+        <div class="card6 bg-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all scale-100 hover:scale-105 duration-200">
+          <img src="https://media.assettype.com/gulfnews%2F2025-03-25%2F2h4r54ni%2FThe-poster-of-QARZ-E-JAAN.jpg?w=480&auto=format%2Ccompress&fit=max" class="w-full h-[180px] md:h-[200px] object-cover" />
+          <h1 class="text-sm md:text-base p-3 pb-1.5">
+            Qarz e jaan - Episode 30 [CC]- 13th April 2025 - Sponsored By Master Paints
+          </h1>
+          <p class="px-3 pb-3.5 text-xs md:text-sm text-gray-700">HUM TV</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
